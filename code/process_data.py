@@ -14,6 +14,7 @@ def denoise_signal(df, varname):
     y_hat         = fit_model_and_predict(lagged_signal)
     make_plots(signal, y_hat, varname)
     
+    #test
 
 def build_lags(signal):
 
