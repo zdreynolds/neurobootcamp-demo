@@ -7,9 +7,6 @@ from sklearn.linear_model import LinearRegression
 def main():
     df = pd.read_csv("../data/raw_data.csv")
     denoise_signal(df, "temperature")
-    denoise_signal(df, "humidity")
-    denoise_signal(df, "pm25")
-
 
 def denoise_signal(df, varname):
     signal        = df[varname].dropna()
